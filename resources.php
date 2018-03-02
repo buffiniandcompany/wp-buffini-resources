@@ -236,6 +236,7 @@
             <script type="text/javascript">
 				jQuery.noConflict();
                 (function($) {
+$(".resources-form").slideUp();
   //Show form when button is clicked
   $(".show-form").click(function() {
     $(".resources-form").slideDown(400);
