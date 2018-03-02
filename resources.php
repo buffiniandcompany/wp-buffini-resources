@@ -126,8 +126,7 @@
 
 
 				<!-- Resource Form -->
-				<
-				? php
+				<?php
 
 				if ( get_field( 'marketo_form_#' ) ) {
 					echo ' <div class="resources-form-container">
@@ -177,8 +176,7 @@
 				?>
 
 				<!-- Resource Form VIDEO only x3x3x3 -->
-				<
-				? php
+				<?php
 
 				if ( get_field( 'marketo_form_#2' ) ) {
 					echo ' <div class="resources-form-container">
