@@ -1,132 +1,133 @@
 				<!-- Resource -->
 
 
-				<div class="resource-meta">
-					<span class="">
-						<?php the_field('file_size'); ?>
-					</span>
+<div class="resource-meta">
+	<span class="">
+		<?php the_field('file_size'); ?>
+	</span>
 
-					<!-- Left Custom -->
-					<?php
+	<!-- Left Custom -->
+	<?php
 
-					if ( get_field( 'left_custom' ) ) {
-						echo '<span class="left-custom">' . get_field( 'left_custom' ) . '</span>';
-					} else {
+	if ( get_field( 'left_custom' ) ) {
+		echo '<span class="left-custom">' . get_field( 'left_custom' ) . '</span>';
+	} else {
 
-						echo '';
+		echo '';
 
-					}
+	}
 
-					?>
+	?>
 
 
-					<!-- File Type -->
-					<?php
+	<!-- File Type -->
+	<?php
 
-					if ( get_field( 'file_type' ) ) {
-						echo '<span class="res-file-type-post">' . get_field( 'file_type' ) . '</span>';
-					} else {
+	if ( get_field( 'file_type' ) ) {
+		echo '<span class="res-file-type-post">' . get_field( 'file_type' ) . '</span>';
+	} else {
 
-						echo '';
+		echo '';
 
-					}
+	}
 
-					?>
+	?>
 
-					<!-- Lock Symbol + Download Button -->
-					<?php
+	<!-- Lock Symbol + Download Button -->
+	<?php
 
-					if ( get_field( 'marketo_form_#' ) ) {
-						echo '<span class="res-lock"><span class="icon-resource-lock"></span></span><a class="hide-form">X</a><a class="btn btn-primary show-form button">Download</a>';
-					} else {
+	if ( get_field( 'marketo_form_#' ) ) {
+		echo '<span class="res-lock"><span class="icon-resource-lock"></span></span><a class="hide-form">X</a><a class="btn btn-primary show-form button">Download</a>';
+	} else {
 
-						echo '';
+		echo '';
 
-					}
+	}
 
-					?>
+	?>
 
-					<!-- Lock Symbol + Download Button VIDEO-->
-					<?php
+	<!-- Lock Symbol + Download Button VIDEO-->
+	<?php
 
-					if ( get_field( 'marketo_form_#2' ) ) {
-						echo '<span class="res-lock"><span class="icon-resource-lock"></span></span><a class="hide-form">X</a><a class="btn btn-primary show-form">' . get_field( 'marketo_button_name' ) . '</a>';
-					} else {
+	if ( get_field( 'marketo_form_#2' ) ) {
+		echo '<span class="res-lock"><span class="icon-resource-lock"></span></span><a class="hide-form">X</a><a class="btn btn-primary show-form">' . get_field( 'marketo_button_name' ) . '</a>';
+	} else {
 
-						echo '';
+		echo '';
 
-					}
+	}
 
-					?>
-					<!-- Right Custom -->
-					<?php
+	?>
+	<!-- Right Custom -->
+	<?php
 
-					if ( get_field( 'right_custom' ) ) {
-						echo '<span class="right-custom">' . get_field( 'right_custom' ) . '</span>';
-					} else {
+	if ( get_field( 'right_custom' ) ) {
+		echo '<span class="right-custom">' . get_field( 'right_custom' ) . '</span>';
+	} else {
 
-						echo '';
+		echo '';
 
-					}
+	}
 
-					?>
+	?>
 
-					<!-- Hide Buttons - start -->
-					<?php
+	<!-- Hide Buttons - start -->
+	<?php
 
-					if ( get_field( 'marketo_form_#' ) ) {
-						echo '<div style="display:none;">';
-					} else {
+	if ( get_field( 'marketo_form_#' ) ) {
+		echo '<div style="display:none;">';
+	} else {
 
-						echo '';
+		echo '';
 
-					}
+	}
 
-					?>
-					<!-- Download Button -->
-					<?php
+	?>
+	<!-- Download Button -->
+	<?php
 
-					if ( get_field( 'download_link' ) ) {
-						echo '<a class="btn btn-primary bufftrack button" href="' . get_field( 'download_link' ) . '">Download</a>';
-					} else {
+	if ( get_field( 'download_link' ) ) {
+		echo '<a class="btn btn-primary bufftrack button" href="' . get_field( 'download_link' ) . '">Download</a>';
+	} else {
 
-						echo '';
+		echo '';
 
-					}
+	}
 
-					?>
+	?>
 
-					<!-- View Button -->
-					<?php
+	<!-- View Button -->
+	<?php
 
-					if ( get_field( 'view_link' ) ) {
-						echo '<a class="btn" href="' . get_field( 'view_link' ) . '" target="_blank">View</a>';
-					} else {
+	if ( get_field( 'view_link' ) ) {
+		echo '<a class="btn" href="' . get_field( 'view_link' ) . '" target="_blank">View</a>';
+	} else {
 
-						echo '';
+		echo '';
 
-					}
+	}
 
-					?>
-					<!-- Hide Buttons - end -->
-					<?php
+	?>
+	<!-- Hide Buttons - end -->
+	<?php
 
-					if ( get_field( 'marketo_form_#' ) ) {
-						echo '</div>';
-					} else {
+	if ( get_field( 'marketo_form_#' ) ) {
+		echo '</div>';
+	} else {
 
-						echo '';
+		echo '';
 
-					}
+	}
 
-					?>
+	?>
 
-					<div class="fix"></div>
-				</div>
+	<div class="fix"></div>
+</div>
 
 
 				<!-- Resource Form -->
-				<?php
+				<
+				? php
 
 				if ( get_field( 'marketo_form_#' ) ) {
 					echo ' <div class="resources-form-container">
@@ -176,7 +177,8 @@
 				?>
 
 				<!-- Resource Form VIDEO only x3x3x3 -->
-				<?php
+				<
+				? php
 
 				if ( get_field( 'marketo_form_#2' ) ) {
 					echo ' <div class="resources-form-container">
@@ -229,30 +231,32 @@
 				?>
 
 				<!-- Form Show & Hide -->
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 				<!-- <script type="text/javascript" src="https://www.buffiniandcompany.com/scripts/jquery.js"></script> -->
 
-				<script type="text/javascript">
-					$( document ).ready( function () {
-						$( ".resources-form" ).hide();
-						$( "#resources-form-tu" ).hide();
-						$( ".hide-form" ).hide();
-						$( "#comments" ).remove();
-						//Show form when button is clicked
-						//alert("hello!");
-						$( ".show-form" ).click( function () {
-							$( ".resources-form" ).slideDown( 400 );
-							$( ".show-form" ).hide();
-							$( ".hide-form" ).fadeIn( 400 );
-						} );
-						//Hide form when x is clicked
-						$( ".hide-form" ).click( function () {
-							$( ".resources-form" ).slideUp();
-							$( ".hide-form" ).hide();
-							$( ".show-form" ).fadeIn( 400 );
-						} );
-					} );
-				</script>
+<script type="text/javascript">
+	jQuery.noConflict();
+	( function ( $ ) {
+	$( ".resources-form" ).hide();
+	$( "#resources-form-tu" ).hide();
+	$( ".hide-form" ).hide();
+	$( "#comments" ).remove();
+	//Show form when button is clicked
+	//alert("hello!");
+	$( ".show-form" ).click( function () {
+		$( ".resources-form" ).slideDown( 400 );
+		$( ".show-form" ).hide();
+		$( ".hide-form" ).fadeIn( 400 );
+	} );
+	//Hide form when x is clicked
+	$( ".hide-form" ).click( function () {
+		$( ".resources-form" ).slideUp();
+		$( ".hide-form" ).hide();
+		$( ".show-form" ).fadeIn( 400 );
+	} );
+	} );
+	} )( jQuery );
+</script>
 
 
 
