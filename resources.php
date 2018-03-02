@@ -141,10 +141,10 @@
         form.onSuccess(function(values, followUpUrl) {
           
           //Show Thank you message
-          $("#resources-form-tu").show();
+          jQuery("#resources-form-tu").show();
             
             //Hide Title
-          $("h2.fill-form").hide();
+          jQuery("h2.fill-form").hide();
             
           //get the forms jQuery element and hide it
           form.getFormElem().hide();
@@ -153,7 +153,7 @@
 
           /*Load iframe with zip file after 2 seconds
 	  setTimeout( function(){ 
-    	    $("<iframe />").attr("src", "' . get_field( 'download_link' ) . '").appendTo(".resources-form-container"); 
+    	    jQuery("<iframe />").attr("src", "' . get_field( 'download_link' ) . '").appendTo(".resources-form-container"); 
   	  }  , 2000 );
 	  */
 
@@ -191,13 +191,13 @@
         form.onSuccess(function(values, followUpUrl) {
           
           //Show Thank you message
-          $("#resources-form-tu").show();
+          jQuery("#resources-form-tu").show();
           
           //Show Video
-          $("#resources-form-video").show();
+          jQuery("#resources-form-video").show();
             
             //Hide Title
-          $("h2.fill-form").hide();
+          jQuery("h2.fill-form").hide();
             
           //get the forms jQuery element and hide it
           form.getFormElem().hide();
@@ -207,7 +207,7 @@
 
 
 
-          $("<iframe />").attr("src", "https://www.youtube.com/embed/ze3fkB0DGTM?rel=0&amp;showinfo=0").attr("width", "640").attr("height", "360").appendTo(".resources-form-container"); 
+          jQuery("<iframe />").attr("src", "https://www.youtube.com/embed/ze3fkB0DGTM?rel=0&amp;showinfo=0").attr("width", "640").attr("height", "360").appendTo(".resources-form-container"); 
             
           //return false to prevent the submission handler from taking the lead to the follow up url.
           return false;
@@ -237,6 +237,7 @@
 				jQuery.noConflict();
                 (function($) {
 $(".resources-form").slideUp();
+$("#resources-form-tu").hide();
   //Show form when button is clicked
   $(".show-form").click(function() {
     $(".resources-form").slideDown(400);
