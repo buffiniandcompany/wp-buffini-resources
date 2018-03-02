@@ -228,34 +228,26 @@
 
 				?>
 
-				<!-- Form Show & Hide -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-				<!-- <script type="text/javascript" src="https://www.buffiniandcompany.com/scripts/jquery.js"></script> -->
+<!-- Form Show & Hide -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
-<script type="text/javascript">
-	jQuery.noConflict();
-	( function ( $ ) {
-	$( ".resources-form" ).hide();
-	$( "#resources-form-tu" ).hide();
-	$( ".hide-form" ).hide();
-	$( "#comments" ).remove();
-	//Show form when button is clicked
-	//alert("hello!");
-	$( ".show-form" ).click( function () {
-		$( ".resources-form" ).slideDown( 400 );
-		$( ".show-form" ).hide();
-		$( ".hide-form" ).fadeIn( 400 );
-	} );
-	//Hide form when x is clicked
-	$( ".hide-form" ).click( function () {
-		$( ".resources-form" ).slideUp();
-		$( ".hide-form" ).hide();
-		$( ".show-form" ).fadeIn( 400 );
-	} );
-	} );
-	} )( jQuery );
-</script>
+<script type="text/javascript" src="https://www.buffiniandcompany.com/scripts/jquery.js"></script>
 
-
+            <script type="text/javascript">
+				jQuery.noConflict();
+                (function($) {
+  //Show form when button is clicked
+  $(".show-form").click(function() {
+    $(".resources-form").slideDown(400);
+    $(".show-form").hide();
+    $(".hide-form").fadeIn(400);
+  });
+  //Hide form when x is clicked
+  $(".hide-form").click(function() {
+    $(".resources-form").slideUp();
+    $(".hide-form").hide();
+    $(".show-form").fadeIn(400);
+  });
+})(jQuery);</script>
 
 				<!-- Resource END-->
