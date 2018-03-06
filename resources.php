@@ -149,7 +149,7 @@
           //get the forms jQuery element and hide it
           form.getFormElem().hide();
 
-	  window.location.href = "' . get_field( 'view_link' ) . '";
+	  //window.location.href = "' . get_field( 'view_link' ) . '";
 
           /*Load iframe with zip file after 2 seconds
 	  setTimeout( function(){ 
@@ -164,7 +164,7 @@
         });
       });
       </script>
-            <div id="resources-form-tu"><img class="check-success" src="/wp-content/uploads/2015/05/check-success.png" width="63" height="63"><h2>Thank you!</h2><p>If your download doesn’t start, you can download it <a class="bufftrack" href="' . get_field( 'download_link' ) . '">here</a></p><p><img src="/wp-content/uploads/2015/05/mobile-device.png" width="25" height="25">On a mobile device? <a class="bufftrack" href="' . get_field( 'view_link' ) . '">View here</a></p></div>
+            <div id="resources-form-tu"><img class="check-success" src="/wp-content/uploads/2015/05/check-success.png" width="63" height="63"><h2>Thank you!</h2><p>Thank you! Please check your email for the downlaod link.<!-- <a class="bufftrack" href="' . get_field( 'download_link' ) . '">here</a></p><p><img src="/wp-content/uploads/2015/05/mobile-device.png" width="25" height="25">On a mobile device? <a class="bufftrack" href="' . get_field( 'view_link' ) . '">View here</a>--></p></div>
             </div>
 	</div>';
 				} else {
@@ -216,7 +216,7 @@
         });
       });
       </script>
-            <div id="resources-form-tu"><img class="check-success" src="/wp-content/uploads/2015/05/check-success.png" width="63" height="63"><h2>Thank you, enjoy!</h2></div>
+            <div id="resources-form-tu" style="text-align: center;"><img class="check-success" src="/wp-content/uploads/2015/05/check-success.png" width="63" height="63"><h2>Thank you, enjoy!</h2></div>
             </div>
             <div id="resources-form-video" class="outer-container">' . get_field( 'video_code' ) . '</div>
 	</div>';
