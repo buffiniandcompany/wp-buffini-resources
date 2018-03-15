@@ -22,12 +22,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
 
 
-.bg-header-001 {
+/* .bg-header-001 {
 	background: #00F260;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+/* 	background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+/* 	background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* } */
 
+.bg-header-001, header.category {
+	background-image: url("/wp-content/uploads/2016/07/Group_Photo_04-05.jpg") !important;
+	background-size: cover !important;
+	background-position: top center !important;
+}
 /* single.php */
 
 article ul + div > img {

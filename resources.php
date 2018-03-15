@@ -164,7 +164,7 @@
         });
       });
       </script>
-            <div id="resources-form-tu"><img class="check-success" src="/wp-content/uploads/2015/05/check-success.png" width="63" height="63"><h2>Thank you!</h2><p>Thank you! Please check your email for the downlaod link.<!-- <a class="bufftrack" href="' . get_field( 'download_link' ) . '">here</a></p><p><img src="/wp-content/uploads/2015/05/mobile-device.png" width="25" height="25">On a mobile device? <a class="bufftrack" href="' . get_field( 'view_link' ) . '">View here</a>--></p></div>
+            <div id="resources-form-tu"><img class="check-success" src="/wp-content/uploads/2015/05/check-success.png" width="63" height="63"><h2>Thank you!</h2><p>Please check your email for the download link.<!-- <a class="bufftrack" href="' . get_field( 'download_link' ) . '">here</a></p><p><img src="/wp-content/uploads/2015/05/mobile-device.png" width="25" height="25">On a mobile device? <a class="bufftrack" href="' . get_field( 'view_link' ) . '">View here</a>--></p></div>
             </div>
 	</div>';
 				} else {

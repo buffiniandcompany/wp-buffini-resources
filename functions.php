@@ -6,7 +6,7 @@ function my_theme_enqueue_styles() {
     $parent_style = 'wp-buffini-style';
 
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'wp-buffini-resources-style',
+    wp_enqueue_style( 'wp-buffini-press-style',
         get_stylesheet_directory_uri() . '/style.css',
         array( $parent_style ),
         wp_get_theme()->get('Version')
